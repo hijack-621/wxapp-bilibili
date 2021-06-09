@@ -1,0 +1,60 @@
+Page {
+  color:#2b2c2c
+}
+.main {
+  width:100%;
+}
+.container {
+  margin-top: 15rpx;
+}
+.video {
+  padding: 8rpx;
+}
+.video video {
+  width: 100%;
+  margin: 0 auto;
+  padding:10rpx 10rpx;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  font-size: 32rpx;
+  padding: 8rpx 6rpx;
+}
+.arr {
+  margin: 8rpx 6rpx;
+}
+.info {
+  padding:2rpx 6rpx;
+}
+.info text {
+  margin-right:18rpx;
+  font-size: 30rpx;
+}
+.author {
+  font-weight: 600;
+}
+
+.recommend {
+  width:100%;
+  padding:10rpx;
+}
+.content {
+  display: flex;
+  justify-content:space-between;
+  width:98%;
+  margin:0 auto;
+  overflow: hidden;
+}
+.re-img {
+  flex:4;
+  margin-right: auto;
+}
+.re-img image {
+  width: 100%;
+  border-radius: 9rpx;
+}
+.re-info {
+  flex:8;
+  padding:0 20rpx;
+}

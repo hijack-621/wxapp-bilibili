@@ -1,0 +1,35 @@
+<view class="main">
+  <Bheader></Bheader>
+
+  <view class="container">
+    <view class="video">
+      <video src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" controls></video>
+      <view class="title">
+        <text>{{videoInfo.videoTitle}}</text>
+        <text class="arr iconfont icon-Arrowdown"></text>
+      </view>
+    </view>
+    <view class="info">
+      <text class="author">{{videoInfo.author}}</text>
+      <text class="played">{{videoInfo.playCount}}</text>
+      <text class="bullet_screen">{{videoInfo.commentCount}}弹幕</text>
+      <text class="date">{{videoInfo.date}}</text>
+    </view>
+  </view>
+
+  <view class="recommend">
+    <view wx:for="{{recommend}}" wx:key="index" class="content">
+      <view class="re-img">
+        <image mode="widthFix" src="{{item.imgSrc}}"></image>
+      </view>
+      <view class="re-info">
+        <text class="">{{item.title}}</text>
+        <view>
+          <text>{{item.playMsg}}万播放</text>
+          <text>{{item.commentCount}}条评论</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>

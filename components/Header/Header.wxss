@@ -1,0 +1,49 @@
+.main {
+  display: flex;
+  width:100%;
+  padding:10rpx;
+}
+.nav {
+  flex:7;
+  display:flex;
+  justify-content:left;
+  align-items:center;
+}
+.nav image {
+  width:135rpx;
+  height:55rpx;
+}
+.search {
+  flex:1;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.search image {
+  width:44rpx;
+  height:44rpx;
+}
+
+.user {
+  flex:2;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.user image {
+  width:44rpx;
+  height:44rpx;
+}
+.down_app {
+  flex:3;
+  background-color: pink;
+  color:#fff;
+  font-weight: 400;
+  font-size: 30rpx;
+  padding:5rpx; 
+  border-radius: 10rpx;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}

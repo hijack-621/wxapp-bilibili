@@ -1,0 +1,37 @@
+<view>
+  <Bheader></Bheader>
+  <view>
+    <scroll-view class="nav" scroll-x>
+    <view class="nav_item {{index===currentIndex ? 'active' : '' }}" bindtap="changeNavIndex" data-index="{{index}}" wx:for="{{navList}}" wx:key="index">
+      {{item.text}}
+    </view>
+  </scroll-view>
+  </view>
+  <view class="swiper">
+    <swiper autoplay circular indicator-dots >
+      <swiper-item wx:for="{{swiperList}}" wx:key="index" >
+       <navigator>
+        <image mode="widthFix" src="{{item.imgSrc}}"></image>
+       </navigator>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="video">
+    <navigator url="../details/details?id={{item.id}}" class="videoBox" wx:for="{{videoList}}" wx:key="index">
+      <view class="videoImg">
+        <image mode="widthFix" src="{{item.imgSrc}}"></image>
+        <view class="playInfo">
+          <view class="play">
+            <text class="iconfont icon-video"></text>
+            <text>{{item.playCount}}</text>
+          </view>
+          <view class="comments">
+            <text class="iconfont icon-comments"></text>
+            <text>{{item.commentCount}}</text>
+          </view>
+        </view>
+      </view>
+      <view class="videoTitle">{{item.desc}}</view>
+    </navigator>
+  </view>
+</view>

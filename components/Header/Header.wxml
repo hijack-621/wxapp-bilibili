@@ -1,0 +1,12 @@
+<view class="main">
+  <navigator class="nav">
+    <image src="../../images/logo2.png"></image>  
+  </navigator>
+  <navigator class="search">
+    <image src="../../images/search.png"></image>
+  </navigator>
+  <navigator class="user">
+    <image src="../../images/user.png"></image>
+  </navigator>
+  <view class="down_app">下载 App</view>
+</view>
